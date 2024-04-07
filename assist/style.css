@@ -226,3 +226,70 @@ main .row img {
 .product .discription h5 {
   margin-bottom: 10px;
 }
+.testimoni {
+  padding: 80px 8%;
+  overflow: hidden;
+}
+.testimoni .row {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  align-items: center;
+  color: var(--text-color);
+  perspective: 400px;
+}
+.testimoni .col-2 {
+  position: relative;
+  height: 329px;
+  transform-style: preserve-3d;
+  transition: all 300ms ease 0s;
+}
+.testimoni .comment {
+  padding: 40px;
+  height: 280px;
+  width: 510px;
+  top: 0;
+  left: calc(50% - 295px);
+  position: absolute;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+  color: #5e6282;
+  opacity: 0.5;
+  transition: 300ms ease-in-out;
+}
+.testimoni .center {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  box-shadow: 0px 2.12px 3.61px 0px #00000001, 0px 9.35px 7.48px 0px #00000002,
+    0px 22.94px 14.91px 0px #00000003, 0px 44.18px 29.23px 0px #00000003,
+    0px 74.34px 53.74px 0px #00000004, 0px 114.69px 91.76px 0px #00000005;
+}
+.testimoni .left {
+  transform: translate3d(-250px, 0, -200px);
+}
+.testimoni .right {
+  transform: translate3d(350px, 0, -200px);
+}
+.testimoni .owner {
+  margin-top: auto;
+}
+.testimoni .dots {
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  position: absolute;
+  gap: 20px;
+}
+.testimoni .dots > div {
+  width: 12px;
+  height: 12px;
+  background: #8e8e8e;
+  border-radius: 50%;
+  &.active {
+    background: #565656;
+  }
+}
