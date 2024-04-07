@@ -210,17 +210,24 @@ main .row img {
   cursor: pointer;
 }
 .product:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   & img {
-    transition: 300ms;
-    transform: scale(1.5);
-  }
-  & .discription {
-    transition: 300ms;
-    background-color: #014a4e;
+    transition: 300ms ease-in-out;
+    transform: translateY(-50px);
   }
 }
+/* .product .img-product {
+  position: relative;
+  transition: 300ms ease-in-out;
+}
+.product .img-product::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+} */
 .product img {
   max-width: 100%;
 }
