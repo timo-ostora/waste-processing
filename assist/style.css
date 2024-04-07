@@ -322,3 +322,14 @@ main .row img {
     background: #565656;
   }
 }
+.colab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  gap: 85px;
+  padding: 20px 8%;
+}
+.colab img {
+  max-height: 100%;
+}
