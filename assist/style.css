@@ -194,6 +194,11 @@ main .row img {
   width: 80px;
   margin-bottom: 32px;
 }
+@media (max-width: 970px) {
+  .category .row {
+    grid-template-columns: 1fr;
+  }
+}
 
 .offres {
   padding: 15px 8%;
@@ -202,6 +207,16 @@ main .row img {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 770px) {
+  .offres .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 638px) {
+  .offres .row {
+    grid-template-columns: 1fr;
+  }
 }
 .product {
   border-radius: 20px;
@@ -237,18 +252,32 @@ main .row img {
   color: var(--text-color);
   perspective: 400px;
 }
+.testimoni .section-titel {
+  text-align: start;
+  width: 300px;
+}
+@media (max-width: 1200px) {
+  .testimoni .row {
+    display: block;
+  }
+  .testimoni .section-titel {
+    text-align: center;
+    width: 100%;
+  }
+}
 .testimoni .col-2 {
   position: relative;
   height: 329px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform-style: preserve-3d;
   transition: all 300ms ease 0s;
 }
 .testimoni .comment {
   padding: 40px;
   height: 280px;
-  width: 510px;
-  top: 0;
-  left: calc(50% - 295px);
+  max-width: 510px;
   position: absolute;
   border-radius: 12px;
   display: flex;
