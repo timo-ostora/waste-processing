@@ -333,3 +333,49 @@ main .row img {
 .colab img {
   max-height: 100%;
 }
+.localisation {
+  padding: 80px 8%;
+}
+.localisation .row {
+  display: flex;
+  gap: 100px;
+}
+.localisation .col-1 {
+  flex-basis: 40%;
+}
+.localisation .col-2 {
+  flex-basis: 40%;
+  align-self: flex-end;
+}
+.localisation .col-2 .section-titel {
+  text-align: start;
+  margin-bottom: 0;
+}
+.localisation .local-discription {
+  color: #393e46;
+  margin: 10px 0;
+}
+.localisation input {
+  padding: 18px 40px;
+  border: 2px solid #393e46;
+  border-radius: 8px;
+  width: 100%;
+}
+.localisation iframe {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  padding: 20px 8% 0;
+  color: white;
+  background: var(--primary-color);
+}
+footer .row {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+footer .col-1 img {
+  max-width: 80px;
+}
