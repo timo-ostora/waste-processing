@@ -391,11 +391,14 @@ footer .store {
 }
 
 @media (max-width: 720px) {
-  footer .row,
   footer .store,
   .colab {
     grid-template-columns: 1fr;
     padding: 40px 20%;
+  }
+  footer .row {
+    flex-direction: column;
+    text-align: center;
   }
   .localisation .row {
     flex-direction: column-reverse;
